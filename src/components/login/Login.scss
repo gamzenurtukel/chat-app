@@ -1,0 +1,56 @@
+@import "../../styles/color.scss";
+
+.login {
+  background-color: $cobalt-blue;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 5em;
+
+  .login-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+  .login-lottie {
+    flex: 50%;
+  }
+
+  .login-form {
+    display: flex;
+    justify-content: center;
+    background-color: $alice-blue;
+    border-radius: 1em;
+    padding: 4em;
+    flex: 50%;
+    margin-block: auto;
+
+    .form-container {
+      display: flex;
+      flex-direction: column;
+
+      .form-input-user {
+      }
+      .form-input-password {
+      }
+      .form-button {
+        cursor: pointer;
+        padding: 0.6rem;
+        border: none;
+        box-shadow: none;
+        background-color: $bright-navy-blue;
+        color: $alice-blue;
+        border-radius: 0.2rem;
+        transition: filter 0.3s ease-out;
+        width: 6.5em;
+        margin-top: 1em;
+        margin-inline: auto;
+
+        &:hover {
+          filter: brightness(1.1);
+        }
+      }
+    }
+  }
+}
