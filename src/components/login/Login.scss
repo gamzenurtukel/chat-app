@@ -37,13 +37,17 @@
 
     .form-container {
       display: flex;
+      flex: 1;
       flex-direction: column;
+      gap: 1em;
 
       .form-input-user {
         @include input();
+        margin: 0;
       }
       .form-input-password {
         @include input($hidden: true);
+        margin: 0;
       }
       .form-button {
         @include button();
