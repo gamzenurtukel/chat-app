@@ -1,21 +1,5 @@
 @import "../../styles/color.scss";
-
-@mixin input($hidden: false) {
-  outline: none;
-  border: none;
-  margin-inline: auto;
-  margin-top: 1em;
-  padding: 0.5em;
-  border-radius: 0.3em;
-
-  &:focus-visible {
-    outline: $bright-navy-blue solid 3px;
-    outline-offset: 0;
-  }
-  @if $hidden {
-    -webkit-text-security: disc;
-  }
-}
+@import "../../styles/input.scss";
 
 .login {
   background-color: $cobalt-blue;
@@ -48,7 +32,7 @@
       flex-direction: column;
 
       .form-input-user {
-        @include input;
+        @include input();
       }
       .form-input-password {
         @include input($hidden: true);
