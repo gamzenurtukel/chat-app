@@ -10,8 +10,16 @@ function Login() {
         </div>
         <div className="login-form">
           <form className="form-container">
-            <input className="form-input-user" />
-            <input className="form-input-password" />
+            <input
+              className="form-input-user"
+              placeholder="User name"
+              name="username"
+            />
+            <input
+              className="form-input-password"
+              placeholder="Password"
+              name="password"
+            />
             <button className="form-button">Login</button>
           </form>
         </div>
