@@ -1,0 +1,16 @@
+@mixin input($hidden: false) {
+  outline: none;
+  border: none;
+  margin-inline: auto;
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 0.3em;
+
+  &:focus-visible {
+    outline: $bright-navy-blue solid 3px;
+    outline-offset: 0;
+  }
+  @if $hidden {
+    -webkit-text-security: disc;
+  }
+}
