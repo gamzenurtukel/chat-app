@@ -1,8 +1,16 @@
 @import "../../styles/color.scss";
 @import "../../styles/input.scss";
+@import "../../styles/button.scss";
 
 .login {
-  background-color: $cobalt-blue;
+  background: linear-gradient(
+    to right top,
+    $cobalt-blue,
+    $bright-navy-blue,
+    $bleu-de-france,
+    $dodger-blue,
+    $blue-jeans
+  );
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -38,21 +46,7 @@
         @include input($hidden: true);
       }
       .form-button {
-        cursor: pointer;
-        padding: 0.6rem;
-        border: none;
-        box-shadow: none;
-        background-color: $bright-navy-blue;
-        color: $alice-blue;
-        border-radius: 0.2rem;
-        transition: filter 0.3s ease-out;
-        width: 6.5em;
-        margin-top: 1em;
-        margin-inline: auto;
-
-        &:hover {
-          filter: brightness(1.1);
-        }
+        @include button();
       }
     }
   }
