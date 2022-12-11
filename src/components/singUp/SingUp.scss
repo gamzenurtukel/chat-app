@@ -1,0 +1,64 @@
+@import "../../styles/color.scss";
+@import "../../styles/input.scss";
+@import "../../styles/button.scss";
+
+.sing-up {
+  background: linear-gradient(
+    to right top,
+    $cobalt-blue,
+    $bright-navy-blue,
+    $bleu-de-france,
+    $dodger-blue,
+    $blue-jeans
+  );
+  height: 100vh;
+  padding-inline: 4em;
+  display: flex;
+
+  .sing-up-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+
+    .sing-up-lottie {
+      display: flex;
+      justify-content: center;
+      flex: 50%;
+      margin-block: auto;
+    }
+
+    .sing-up-form {
+      display: flex;
+      flex: 50%;
+      margin-block: auto;
+
+      .form-container {
+        display: flex;
+        flex: 30%;
+        flex-direction: column;
+        gap: 0.5em;
+        border: 2px solid $alice-blue;
+        background-color: $alice-blue;
+        border-radius: 0.3rem;
+        padding: 2rem;
+        box-shadow: 0 4px 8px 0 $cobalt-blue, 0 6px 20px 0 $green-blue;
+
+        .form-input-username {
+          @include input();
+          margin: 0;
+        }
+        .form-input-email {
+          @include input();
+          margin: 0;
+        }
+        .form-input-password {
+          @include input($hidden: true);
+          margin: 0;
+        }
+        .form-button {
+          @include button();
+        }
+      }
+    }
+  }
+}
