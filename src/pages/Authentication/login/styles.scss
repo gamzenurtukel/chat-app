@@ -1,0 +1,47 @@
+@import '../../../styles/colors.scss';
+
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom right, $indigo-dye, $grape);
+  height: 100vh;
+
+  .login-lottie {
+    height: 830px;
+    width: 850px;
+    display: flex;
+    margin-left: 5vw;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    padding-inline: 3vw;
+    width: 30vw;
+
+    .form-title {
+      font-size: 2.3rem;
+      font-weight: bold;
+      color: $indigo-dye;
+      margin-bottom: 2rem;
+    }
+
+    .form {
+      width: 100%;
+      .login-form-button {
+        padding: 0.3rem;
+        width: 100%;
+      }
+    }
+    .form-subtitle {
+      font-size: 0.8rem;
+      font-weight: 600;
+      line-height: 1.5rem;
+      color: $indigo-dye;
+      margin-top: 1rem;
+    }
+  }
+}
